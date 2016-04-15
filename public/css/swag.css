@@ -1,0 +1,42 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: #42575b;
+}
+
+
+#container{
+    width: 1000px;
+    height: 500px;
+    background-color: darkgray;
+}
+
+#header{
+    background: #101010;
+    width: 100%;
+    top: 0;
+    position: fixed;
+    text-align: center;
+
+}
+
+#div1{
+
+    height: 100px;
+    width: 200px;
+    border: dashed;
+    color: darkred;
+
+}
+
+#div2{
+
+    height: 100px;
+    width: 200px;
+    border: dashed;
+    color: #5a8b43;
+
+}
