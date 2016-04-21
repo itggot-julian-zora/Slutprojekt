@@ -14,7 +14,7 @@ body {
 }
 
 a {
-    color: white;
+    color: #ecf0f1;
     text-decoration: none;
 }
 
@@ -34,13 +34,12 @@ a {
 
 }
 
-
 #div1{
 
     width: 20%;
     height: 30%;
     color: black;
-    background: #006600;
+    background: #3498db;
     border: 1px solid black;
     display: inline-block;
     margin: 200px;
@@ -55,7 +54,12 @@ a {
 }
 
 #div1:hover{
-    background-color: greenyellow;
+    background-color: #40ccff;
+}
+
+#div1:active {
+    position: relative;
+    top: 1px;
 }
 
 
@@ -64,7 +68,7 @@ a {
     width: 20%;
     height: 30%;
     color: white;
-    background: #006600;
+    background: #3498db;
     border: 1px solid black;
     display: inline-block;
     margin: 200px;
@@ -79,14 +83,19 @@ a {
 }
 
 #div2:hover{
-    background-color: greenyellow;
+    background-color: #40ccff;
+}
+
+#div2:active {
+    position: relative;
+    top: 1px;
 }
 
 .knappar{
     width: 18%;
     height: 30%;
     color: black;
-    background: #006600;
+    background: #3498db;
     border: 1px solid black;
     display: inline-block;
     margin: 100px;
@@ -102,5 +111,32 @@ a {
 }
 
 .knappar:hover{
-    background-color: greenyellow;
+    background-color: #40ccff;
+}
+
+.knappar:active {
+    position: relative;
+    top: 1px;
+}
+
+@media (max-width: 600px){
+    #div1 {
+        height: 150px;
+        width: 250px;
+        margin-left: auto;
+        margin-right: auto;
+}
+
+    #div2 {
+        height: 150px;
+        width: 250px;
+        margin-left: auto;
+        margin-right: auto;
+}
+
+    .knappar {
+        height: 150px;
+        width: 250px;
+        margin-left: auto;
+        margin-right: auto;
 }
