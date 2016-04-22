@@ -5,35 +5,35 @@ class App < Sinatra::Base
     erb :index
   end
 
-  get '/difficulty_strength.erb' do
+  get '/strength/difficulty' do
     erb :difficulty_strength
   end
 
-  get '/strength_beginner.erb' do
+  get '/strength/beginner' do
     erb :strength_beginner
   end
 
-  get '/strength_intermediate.erb' do
+  get '/strength/intermediate' do
     erb :strength_intermediate
   end
 
-  get '/strength_advanced.erb' do
+  get '/strength/advanced' do
     erb :strength_advanced
   end
 
-  get '/difficulty_cardio.erb' do
+  get '/cardio/difficulty' do
     erb :difficulty_cardio
   end
 
-  get '/cardio_beginner.erb' do
+  get '/cardio/beginner' do
     erb :cardio_beginner
   end
 
-  get '/cardio_intermediate.erb' do
+  get '/cardio/intermediate' do
     erb :cardio_intermediate
   end
 
-  get '/cardio_advanced.erb' do
+  get '/cardio/advanced' do
     erb :cardio_advanced
   end
 
