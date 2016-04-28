@@ -1,4 +1,4 @@
-class User_workout
+class UserWorkout
   include DataMapper::Resource
 
   belongs_to :user, :key => true

@@ -1,8 +1,8 @@
 class User
   include DataMapper::Resource
-  property(:id, serial) #primary key, INTEGER, AUTO-INCREMENT
-  property(:name, string)
-  property(:email, string)
+  property(:id, Serial) #primary key, INTEGER, AUTO-INCREMENT
+  property(:name, String)
+  property(:email, String)
   property(:password, BCryptHash)
-  property(:username, string)
+  property(:username, String)
 end
