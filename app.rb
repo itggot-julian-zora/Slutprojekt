@@ -2,6 +2,7 @@ class App < Sinatra::Base
   enable :sessions
 
   get '/' do
+    @user = User.get(session[:user_id])
     erb :index
   end
 
@@ -35,6 +36,19 @@ class App < Sinatra::Base
 
   get '/cardio/advanced' do
     erb :cardio_advanced
+  end
+
+  post '/login' do
+    user = User.first(username: params["username"])
+    if user && user.password == params["password"]
+      session[:user_id] = user.id
+    end
+    redirect '/'
+  end
+
+  post '/logout' do
+    session.clear
+    redirect '/'
   end
 
 end

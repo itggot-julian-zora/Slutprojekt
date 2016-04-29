@@ -4,6 +4,23 @@
     <link rel="stylesheet" href="/css/swag.css" type="text/css"/>
     <meta charset="UTF-8">
     <title>Workout Helper</title>
+
+
+  <% if @user %>
+      <span>Inloggad som <%= @user.username %></span>
+      <form action="/logout" method="post">
+        <button type="submit">Logga ut</button>
+      </form>
+  <% else %>
+      <div id="login">
+        <form action="/login" method="post">
+          <input name="username" type="text" placeholder="username">
+          <input name="password" type="password" placeholder="password">
+          <button type="submit">Logga in</button>
+        </form>
+      </div>
+  <%end%>
+
 </head>
 <body>
 <div class="header">
@@ -21,6 +38,7 @@
         <a href="/strength/difficulty"><h1>Strength</h1></a>
     </div>
 </div>
+
 
 </body>
 </html>
