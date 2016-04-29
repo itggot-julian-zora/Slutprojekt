@@ -1,22 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,300,600">
     <link rel="stylesheet" href="/css/swag.css" type="text/css"/>
     <meta charset="UTF-8">
     <title>Workout Helper</title>
 
 
   <% if @user %>
-      <span>Inloggad som <%= @user.username %></span>
+      <span>Logged in as <%= @user.username %></span>
       <form action="/logout" method="post">
-        <button type="submit">Logga ut</button>
+        <button type="submit">Log out</button>
       </form>
   <% else %>
       <div id="login">
         <form action="/login" method="post">
-          <input name="username" type="text" placeholder="username">
-          <input name="password" type="password" placeholder="password">
-          <button type="submit">Logga in</button>
+          <div id="loginbuttons">
+          <input name="username" type="text" placeholder="Username"><BR>
+          <input name="password" type="password" placeholder="Password">
+          </div>
+          <button type="submit">Log in</button>
         </form>
       </div>
   <%end%>
