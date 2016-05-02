@@ -46,8 +46,14 @@ class App < Sinatra::Base
     user = User.first(username: params["username"])
     if user && user.password == params["password"]
       session[:user_id] = user.id
+      redirect '/homepage'
+    else
+      redirect '/register'
     end
-    redirect '/'
+  end
+
+  get '/register' do
+    erb :register
   end
 
   post '/logout' do
