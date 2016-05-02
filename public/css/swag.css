@@ -121,24 +121,31 @@ a {
 }
 
 input {
-    width: 100px;
+    width: 80%;
+    height: 28px;
 }
 
-#loginbuttons{
+#button {
+    height: 80px;
     float: right;
-    margin-right: 30%;
-}
-
-button {
-    height: 0%;
-    float: right;
-    margin-right: 30%;
+    margin-right: 30px;
 }
 
 #information {
+    margin-top: 50px;
+    float: left;
     box-shadow: 0px 0px 10px 0px #101010;
     width: 30%;
-    margin-left: 30px;
+    margin-left: 5%;
+}
+
+#logincontainer {
+    float: right;
+    margin-top: 50px;
+    width: 30%;
+    margin-right: 5%;
+    background-color: #d8dcdd;
+    height: 80%;
 }
 
 

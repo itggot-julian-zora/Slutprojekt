@@ -16,25 +16,6 @@
   </div>
 </div>
 
-<% if @user %>
-    <span>Logged in as <%= @user.username %></span>
-    <form action="/logout" method="post">
-      <button type="submit">Log out</button>
-    </form>
-<% else %>
-    <div id="login">
-      <form action="/login" method="post">
-        <div id="loginbuttons">
-          <input name="username" type="text" placeholder="Username"><BR>
-          <input name="password" type="password" placeholder="Password">
-        </div>
-        <div id="log">
-          <button type="submit">Log in</button>
-        </div>
-      </form>
-    </div>
-<%end%>
-
 <div id="information">
   <p> Workout helper etablerades 2016 som e Lorem ipsum dolor sit amet, consectetur adipisicing elit,
     sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
@@ -43,6 +24,26 @@
     laborum. </p>
 </div>
 
+<div id="logincontainer">
+
+  <% if @user %>
+      <span>Logged in as <%= @user.username %></span>
+      <form action="/logout" method="post">
+        <button type="submit">Log out</button>
+      </form>
+  <% else %>
+      <div id="login">
+        <form action="/login" method="post">
+          <div id="loginbuttons">
+            <input name="username" type="text" placeholder="Username"><BR>
+            <input name="password" type="password" placeholder="Password">
+          </div>
+            <button type="submit">Log in</button>
+        </form>
+      </div>
+  <%end%>
+
+</div>
 
 </body>
 </html>
