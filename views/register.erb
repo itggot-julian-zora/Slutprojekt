@@ -16,7 +16,28 @@
   </div>
 </div>
 
-<div id"
+<div id="register">
+
+  <% if @user %>
+    <span>Logged in as <%= @user.username %></span>
+    <form action="/logout" method="post">
+      <button type="submit">Log out</button>
+    </form>
+  <% else %>
+    <div id="login">
+      <form action="/user/new" method="post">
+        <div id="loginbuttons">
+          <input name="name" type="name" placeholder="Name">
+          <input name="email" type="email" placeholder="Email"><BR>
+          <input name="username" type="text" placeholder="Username"><BR>
+          <input name="password" type="password" placeholder="Password">
+        </div>
+        <button type="submit">Register</button>
+      </form>
+    </div>
+  <%end%>
+
+</div>
 
 
 

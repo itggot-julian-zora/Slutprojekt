@@ -56,6 +56,23 @@ class App < Sinatra::Base
     erb :register
   end
 
+  post '/user/new' do
+    name = params['name']
+    email = params['email']
+    username = params['username']
+    password = params['password']
+    db_user = User.first(:username => username)
+    if db_user.nil?
+      User.create(name: name,
+                  email: email,
+                  password: password,
+                  username: username)
+      redirect '/accountcreated'
+    else
+      redirect '/accountalreadyexists'
+    end
+  end
+
   post '/logout' do
     session.clear
     redirect '/'
