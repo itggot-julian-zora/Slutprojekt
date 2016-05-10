@@ -173,6 +173,15 @@ button {
     height: 10%;
 }
 
+#accountcreatedinformation{
+    height: 20%;
+    width: 30%;
+    background-color: #d8dcdd;
+    float: left;
+    margin-top: 15%;
+    margin-left: 33%;
+}
+
 @media (max-width: 1000px) {
     #div1 {
         height: 150px;

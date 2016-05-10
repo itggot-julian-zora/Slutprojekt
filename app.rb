@@ -56,6 +56,18 @@ class App < Sinatra::Base
     erb :register
   end
 
+  get '/accountcreated' do
+    erb :accountcreated
+  end
+
+  get '/login.erb' do
+    erb :login
+  end
+
+  get '/accountalreadyexists' do
+    erb :accountalreadyexists
+  end
+
   post '/user/new' do
     name = params['name']
     email = params['email']
@@ -76,6 +88,11 @@ class App < Sinatra::Base
   post '/logout' do
     session.clear
     redirect '/'
+  end
+
+  get '/test' do
+    @workouts = Workout.all
+    erb :test
   end
 
 end
