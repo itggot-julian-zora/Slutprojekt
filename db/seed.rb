@@ -2,6 +2,7 @@ class Seeder
 
   def self.seed!
     self.user
+    self.workout
   end
 
   def self.user
