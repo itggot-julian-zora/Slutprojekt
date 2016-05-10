@@ -90,9 +90,9 @@ class App < Sinatra::Base
     redirect '/'
   end
 
-  get '/test' do
-    @workouts = Workout.all
-    erb :test
+  get '/cardio_beginner' do
+    @cardio_workouts = Workout.all(:style => "Cardio")
+    erb :cardio_beginner
   end
 
 end

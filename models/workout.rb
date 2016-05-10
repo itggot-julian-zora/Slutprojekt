@@ -4,4 +4,5 @@ class Workout
   property(:name, String)
   property(:picture, String)
   property(:time, Integer)
+  property(:style, String)
 end

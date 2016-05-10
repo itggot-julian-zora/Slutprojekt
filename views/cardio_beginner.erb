@@ -7,22 +7,9 @@
 </head>
 <body>
 
-<div class="header">
-  <div class="container">
-    <div class="logo">
-      <h1><a href="/">Workout Helper</a></h1>
-    </div>
-  </div>
-</div>
-<div class="knappar">
-  <h1><a href="/cardio/beginner">Beginner</a></h1>
-</div>
-<div class="knappar">
-  <h1><a href="/cardio/intermediate">Intermediate</a></h1>
-</div>
-<div class="knappar">
-  <h1><a href="/cardio/advanced">Advanced</a></h1>
-</div>
+<% for cardio in @cardio_workouts %>
+    <p><%cardio.id%></p>
+<%end%>
 
 </body>
 </html>

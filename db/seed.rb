@@ -14,15 +14,15 @@ class Seeder
   def self.workout
     Workout.create(name: "Cardio - Beginner1",
                   picture: '/img/',
-                  time: 5)
+                  time: 5, style: "Cardio")
 
     Workout.create(name: "Cardio - Intermediate1",
                    picture: '/img/',
-                   time: 5)
+                   time: 5, style: "Cardio")
 
     Workout.create(name: "Cardio - Advanced1",
                    picture: '/img/',
-                   time: 5)
+                   time: 5, style: "Cardio")
 
     Workout.create(name: "Chest - Beginner",
                    picture: '/img/',
