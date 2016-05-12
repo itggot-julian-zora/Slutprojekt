@@ -42,10 +42,13 @@ class Seeder
   end
 
   def self.exercise
-    Exercise.create(name: "Jumping Jacks",
+    Exercise.create(name: "20 Jumping Jacks",
                     picture: '/img/',
                     workout_name: 'Cardio - Beginner 1')
-    Exercise.create(name: "Pullups",
+    Exercise.create(name: "10 Burpees",
+                    picture: '/img/',
+                    workout_name: 'Cardio - Beginner 1')
+    Exercise.create(name: "30 Seconds Rest",
                     picture: '/img/',
                     workout_name: 'Cardio - Beginner 1')
   end
