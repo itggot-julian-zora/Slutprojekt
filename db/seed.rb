@@ -3,6 +3,7 @@ class Seeder
   def self.seed!
     self.user
     self.workout
+    self.exercise
   end
 
   def self.user
@@ -13,15 +14,15 @@ class Seeder
   end
 
   def self.workout
-    Workout.create(name: "Cardio - Beginner1",
+    Workout.create(name: "Cardio - Beginner 1",
                   picture: '/img/',
                   time: 5, style: "Cardio")
 
-    Workout.create(name: "Cardio - Intermediate1",
+    Workout.create(name: "Cardio - Beginner 2",
                    picture: '/img/',
                    time: 5, style: "Cardio")
 
-    Workout.create(name: "Cardio - Advanced1",
+    Workout.create(name: "Cardio - Beginner 3",
                    picture: '/img/',
                    time: 5, style: "Cardio")
 
@@ -33,7 +34,7 @@ class Seeder
                    picture: '/img/',
                    time: 5)
 
-    Workout.create(name: "Chest - Advanced",
+    Workout.create(id: 0, name: "Chest - Advanced",
                    picture: '/img/',
                    time: 5)
 
@@ -42,7 +43,11 @@ class Seeder
 
   def self.exercise
     Exercise.create(name: "Jumping Jacks",
-                    picture: '/img/')
+                    picture: '/img/',
+                    workout_name: 'Cardio - Beginner 1')
+    Exercise.create(name: "Pullups",
+                    picture: '/img/',
+                    workout_name: 'Cardio - Beginner 1')
   end
 
 end

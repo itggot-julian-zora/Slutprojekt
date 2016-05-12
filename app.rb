@@ -91,7 +91,8 @@ class App < Sinatra::Base
   end
 
   get '/cardio_beginner' do
-    @cardio_workouts = Workout.all(style: "Cardio")
+    @workouts = Workout.all(:style => 'Cardio')
+    # @exercises = Exercise.all(:workout_name => @workout.name)
     erb :cardio_beginner
   end
 

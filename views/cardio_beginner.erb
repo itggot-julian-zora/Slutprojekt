@@ -15,8 +15,10 @@
   </div>
 </div>
 
-<% for cardio in @cardio_workouts %>
-    <p><%=cardio.id%></p>
+<% for workout in @workouts %>
+    <div class="knappar">
+      <p><%=workout.name%></p>
+    </div>
 <%end%>
 
 </body>

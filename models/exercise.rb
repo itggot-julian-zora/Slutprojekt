@@ -3,4 +3,5 @@ class Exercise
     property(:id, Serial) #primary key, INTEGER, AUTO-INCREMENT
     property(:name, String)
     property(:picture, String)
+    property(:workout_name, String)
 end
