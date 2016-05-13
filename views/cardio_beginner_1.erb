@@ -15,11 +15,17 @@
   </div>
 </div>
 
+<div id="exercisebuttonsholder">
 <% for exercise in @exercises %>
-    <div class="knappar">
+    <div class="exercisebuttons">
       <p><%=exercise.name%></p>
     </div>
 <%end%>
+</div>
+
+<div class="startbutton">
+  <h4><a href="index.erb">Start</a></h4>
+</div>
 
 </body>
 </html>
