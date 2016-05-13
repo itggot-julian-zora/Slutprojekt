@@ -198,7 +198,6 @@ button {
     border: 1px solid black;
     display: inline-block;
     border-radius: 20px;
-    transition: background-color 0.5s ease;
     line-height: 90px;
     vertical-align: middle;
     text-align: center;
@@ -212,8 +211,8 @@ button {
     margin-right: 20px;
     width: 90px;
     height: 30px;
-    border-radius: 60px;
-    background-color: #58d819;
+    line-height: 0px;
+    background: #58d819;
     text-align: center;
     transition: background-color 0.5s ease;
 }

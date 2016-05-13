@@ -6,6 +6,10 @@ class App < Sinatra::Base
     erb :login
   end
 
+  get '/index' do
+    erb :index
+  end
+
   get '/homepage' do
     erb :index
   end
