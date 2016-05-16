@@ -28,8 +28,6 @@ class Seeder
                     workout: workout)
 
 
-
-
     Workout.create(name: "Cardio - Beginner 2",
                    picture: '/img/',
                    time: 5, style: "Cardio")

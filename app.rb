@@ -1,8 +1,13 @@
 class App < Sinatra::Base
   enable :sessions
 
+  before do
+    if session[:user_id]
+      @user = User.get(session[:user_id])
+    end
+  end
+
   get '/' do
-    @user = User.get(session[:user_id])
     erb :login
   end
 

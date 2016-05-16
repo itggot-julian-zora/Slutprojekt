@@ -1,31 +1,5 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,300,600">
-    <link rel="stylesheet" href="/css/swag.css" type="text/css"/>
-    <meta charset="UTF-8">
-    <title>Workout Helper</title>
-</head>
 <body>
 
-<div id="loginname">
-
-<% if @user %>
-    <span>Logged in as <%= @user.username %></span>
-    <form action="/logout" method="post">
-      <button type="submit">Log out</button>
-    </form>
-<%end%>
-
-</div>
-
-<div class="header">
-    <div class="container">
-        <div class="logo">
-            <h1><a href="/">Workout Helper</a></h1>
-        </div>
-    </div>
-</div>
 <div id="container">
   <div id="holder">
     <div id="div1">
@@ -39,4 +13,3 @@
 
 
 </body>
-</html>
