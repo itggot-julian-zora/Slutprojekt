@@ -18,10 +18,9 @@ a {
     text-decoration: none;
 }
 
-#container{
-    width: 100%;
+.container{
+    width: 830px;
     height: 100%;
-    background-color: #ecf0f1;
     text-align: center;
 }
 
@@ -100,8 +99,8 @@ a {
     border: 1px solid black;
     display: inline-block;
     float: left;
-    margin-top: 10px;
-    margin-left: 30px;
+    margin-top: 15%;
+    margin-left: 10%;
     border-radius: 20px;
     transition: background-color 0.5s ease;
     line-height: 90px;
@@ -132,6 +131,20 @@ button {
     height: 60px;
     float: right;
     margin-right: 15%;
+}
+
+#logoutbutton {
+    width: 100px;
+    height: 60px;
+    float: left;
+    margin-left: 1%;
+}
+
+#loggedintext{
+    color: #ecf0f1;
+    float: left;
+    width: 155px;
+    height: 60px;
 }
 
 #information {
