@@ -99,14 +99,15 @@ class App < Sinatra::Base
     redirect '/'
   end
 
-  get '/cardio_beginner' do
-    @workouts = Workout.all(:style => 'Cardio')
-    erb :cardio_beginner
+  get '/workout/:style' do |style|
+    @workouts = Workout.all(:style => style)
+    erb :workout_listing
   end
 
-  get '/cardio_beginner/:id' do |id|
-    @exercises = Exercise.all(:workout => Workout.first(:name => 'Cardio - Beginner 1'))
-    erb :cardio_beginner_1
+  get 'workout/:style/exercise/:id' do |_, id|
+    @exercise = Exercise.get(id)
+    @workout = @exercise.workout
+    erb :exercise
   end
 
 end

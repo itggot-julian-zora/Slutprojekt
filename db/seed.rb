@@ -15,7 +15,7 @@ class Seeder
   def self.workout_and_exercises
     workout = Workout.create(name: "Cardio - Beginner 1",
                   picture: '/img/',
-                  time: 5, style: "Cardio")
+                  time: 5, style: "cardio")
 
     Exercise.create(name: "20 Jumping Jacks",
                       picture: '/img/',
@@ -30,11 +30,11 @@ class Seeder
 
     Workout.create(name: "Cardio - Beginner 2",
                    picture: '/img/',
-                   time: 5, style: "Cardio")
+                   time: 5, style: "cardio")
 
     Workout.create(name: "Cardio - Beginner 3",
                    picture: '/img/',
-                   time: 5, style: "Cardio")
+                   time: 5, style: "cardio")
 
     Workout.create(name: "Chest - Beginner",
                    picture: '/img/',
