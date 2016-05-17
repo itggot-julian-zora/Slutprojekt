@@ -39,10 +39,6 @@ class App < Sinatra::Base
     erb :difficulty_cardio
   end
 
-  get '/cardio/beginner' do
-    erb :cardio_beginner
-  end
-
   get '/cardio/intermediate' do
     erb :cardio_intermediate
   end
@@ -99,8 +95,13 @@ class App < Sinatra::Base
     redirect '/'
   end
 
+  get '/exercise' do
+    erb :exercise
+  end
+
   get '/workout/:style' do |style|
     @workouts = Workout.all(:style => style)
+    puts style
     erb :workout_listing
   end
 

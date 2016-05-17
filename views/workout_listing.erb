@@ -1,0 +1,9 @@
+<body>
+
+<% for workout in @workouts %>
+    <div class="knappar">
+      <p><a href="exercise.erb"><%=workout.name%></a></p>
+    </div>
+<%end%>
+
+</body>
