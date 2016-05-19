@@ -23,28 +23,8 @@ class App < Sinatra::Base
     erb :difficulty_strength
   end
 
-  get '/strength/beginner' do
-    erb :strength_beginner
-  end
-
-  get '/strength/intermediate' do
-    erb :strength_intermediate
-  end
-
-  get '/strength/advanced' do
-    erb :strength_advanced
-  end
-
   get '/cardio/difficulty' do
     erb :difficulty_cardio
-  end
-
-  get '/cardio/intermediate' do
-    erb :cardio_intermediate
-  end
-
-  get '/cardio/advanced' do
-    erb :cardio_advanced
   end
 
   post '/login' do
@@ -101,7 +81,6 @@ class App < Sinatra::Base
 
   get '/workout/:style' do |style|
     @workouts = Workout.all(:style => style)
-    puts style
     erb :workout_listing
   end
 
