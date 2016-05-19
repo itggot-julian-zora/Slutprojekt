@@ -123,17 +123,17 @@ class Seeder
     Workout.create(name: 'Strength - Advanced 1',
                    picture: '/img/',
                    time: 5,
-                   style: 'strength_beginner')
+                   style: 'strength_advanced')
 
     Workout.create(name: 'Strength - Advanced 2',
                    picture: '/img/',
                    time: 5,
-                   style: 'strength_beginner')
+                   style: 'strength_advanced')
 
     Workout.create(name: 'Strength - Advanced 3',
                    picture: '/img/',
                    time: 5,
-                   style: 'strength_beginner')
+                   style: 'strength_advanced')
 
 
   end
