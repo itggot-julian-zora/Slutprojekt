@@ -1,6 +1,7 @@
 <body>
 
 <% for exercise in @exercises %>
+
   <div id="exercisebuttonsholder">
     <div class="exercisebuttons">
       <p><%= exercise.name %></a></p>
@@ -10,7 +11,7 @@
 <%end%>
 
 <div class="startbutton">
-  <h4><a href="/workout/<%= @workout.style %>/exercise/<%= exercise.id %>">Start</a></h4>
+  <h4><a href="/workout/<%= @workout.style %>/exercise/<%= @exercise[0].id %>">Start</a></h4>
 </div>
 
 </body>

@@ -51,7 +51,8 @@ class Seeder
 
     Exercise.create(name: "60 Jumping Jacks",
                     picture: '/img/',
-                    workout: workout)
+                    workout: workout,
+                    next: 2)
     Exercise.create(name: "30 Burpees",
                     picture: '/img/',
                     workout: workout)
