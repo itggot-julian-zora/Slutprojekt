@@ -187,6 +187,10 @@ button {
 
 }
 
+#registerbutton {
+    width: 100%;
+}
+
 #holder {
     margin:15% auto;
     width: 700px;
