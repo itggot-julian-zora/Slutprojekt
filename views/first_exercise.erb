@@ -1,9 +1,16 @@
 <body>
 
 <% for exercise in @exercises %>
-    <div class="knappar">
-      <p><a href="/workout/<%= @workout.style %>/exercise/<%= exercise.id %>"><%= exercise.name %></a></p>
+  <div id="exercisebuttonsholder">
+    <div class="exercisebuttons">
+      <p><%= exercise.name %></a></p>
     </div>
+  </div>
+
 <%end%>
+
+<div class="startbutton">
+  <h4><a href="/workout/<%= @workout.style %>/exercise/<%= exercise.id %>">Start</a></h4>
+</div>
 
 </body>
