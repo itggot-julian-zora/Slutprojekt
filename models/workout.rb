@@ -5,5 +5,6 @@ class Workout
   property(:picture, String)
   property(:time, Integer)
   property(:style, String)
+  property(:level, Integer)
   has n, :exercises
 end

@@ -79,13 +79,17 @@ class App < Sinatra::Base
     erb :exercise
   end
 
+  get '/history' do
+    erb :history
+  end
+
   get '/workout/:style' do |style|
     @workouts = Workout.all(:style => style)
     erb :workout_listing
   end
 
-  get '/workout/:style/overview/?' do |style|
-    @workout = Workout.first(:style => style)
+  get '/workout/:style/:level/overview/?' do |style, level|
+    @workout = Workout.first(:style => style, :level => level)
     @exercises = Exercise.all(:workout => @workout)
     erb :first_exercise
   end

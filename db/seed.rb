@@ -15,7 +15,8 @@ class Seeder
   def self.workout_and_exercises
     workout = Workout.create(name: 'Cardio - Beginner 1',
                   picture: '/img/',
-                  time: 5, style: "cardio_beginner")
+                  time: 5, style: "cardio_beginner",
+                  level: 1)
 
     Exercise.create(name: "20 Jumping Jacks",
                     picture: '/img/',
@@ -33,7 +34,8 @@ class Seeder
     workout = Workout.create(name: 'Cardio - Beginner 2',
                    picture: '/img/',
                    time: 5,
-                   style: 'cardio_beginner')
+                   style: 'cardio_beginner',
+                  level: 2)
 
     Exercise.create(name: "40 Jumping Jacks",
                     picture: '/img/',
@@ -49,7 +51,8 @@ class Seeder
     workout = Workout.create(name: 'Cardio - Beginner 3',
                    picture: '/img/',
                    time: 5,
-                   style: 'cardio_beginner')
+                   style: 'cardio_beginner',
+                  level: 3)
 
     Exercise.create(name: "60 Jumping Jacks",
                     picture: '/img/',
@@ -62,10 +65,22 @@ class Seeder
                     workout: workout)
 
 
-    Workout.create(name: 'Cardio - Intermediate 1',
+    workout = Workout.create(name: 'Cardio - Intermediate 1',
                    picture: '/img/',
                    time: 5,
                    style: 'cardio_intermediate')
+
+    Exercise.create(name: "80 Jumping Jacks",
+                    picture: '/img/',
+                    workout: workout,
+                    next: 11)
+    Exercise.create(name: "50 Burpees",
+                    picture: '/img/',
+                    workout: workout,
+                    next: 12)
+    Exercise.create(name: "10 Seconds Rest",
+                    picture: '/img/',
+                    workout: workout)
 
     Workout.create(name: 'Cardio - Intermediate 2',
                    picture: '/img/',
