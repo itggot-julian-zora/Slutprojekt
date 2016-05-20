@@ -84,7 +84,13 @@ class App < Sinatra::Base
     erb :workout_listing
   end
 
-  get 'workout/:style/exercise/:id' do |_, id|
+  get '/workout/:style/overview/?' do |style|
+    @workout = Workout.first(:style => style)
+    @exercises = Exercise.all(:workout => @workout)
+    erb :first_exercise
+  end
+
+    get '/workout/:style/exercise/:id' do |_, id|
     @exercise = Exercise.get(id)
     @workout = @exercise.workout
     erb :exercise

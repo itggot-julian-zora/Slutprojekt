@@ -1,11 +1,9 @@
 <body>
 
 <div id="exercisebuttonsholder">
-  <% for exercise in @exercises %>
-      <div class="exercisebuttons">
-        <p><%=exercise.name%></p>
-      </div>
-  <%end%>
+  <div class="exercisebuttons">
+    <p><%=@exercise.name%></p>
+  </div>
 </div>
 
 <div class="startbutton">

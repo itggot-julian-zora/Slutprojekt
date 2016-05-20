@@ -1,0 +1,9 @@
+<body>
+
+<% for exercise in @exercises %>
+    <div class="knappar">
+      <p><a href="/workout/<%= @workout.style %>/exercise/<%= exercise.id %>"><%= exercise.name %></a></p>
+    </div>
+<%end%>
+
+</body>
