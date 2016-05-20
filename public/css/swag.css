@@ -18,6 +18,10 @@ a {
     text-decoration: none;
 }
 
+.logo {
+    margin-left: 60%;
+}
+
 .container{
     width: 830px;
     height: 100%;
@@ -47,6 +51,7 @@ a {
     transition: background-color 0.5s ease;
     line-height: 90px;
     vertical-align: middle;
+    text-align: center;
     -webkit-box-shadow: 0px 0px 40px 0px rgba(0,0,0,0.75);
     -moz-box-shadow: 0px 0px 40px 0px rgba(0,0,0,0.75);
     box-shadow: 0px 0px 40px 0px rgba(0,0,0,0.75);
@@ -73,6 +78,7 @@ a {
     display: inline-block;
     float: right;
     border-radius: 20px;
+    text-align: center;
     transition: background-color 0.5s ease;
     -webkit-box-shadow: 0px 0px 40px 0px rgba(0,0,0,0.75);
     -moz-box-shadow: 0px 0px 40px 0px rgba(0,0,0,0.75);
@@ -130,7 +136,6 @@ button {
     width: 300px;
     height: 60px;
     float: right;
-    margin-right: 15%;
 }
 
 #logoutbutton {
@@ -153,6 +158,14 @@ button {
     box-shadow: 0px 0px 10px 0px #101010;
     width: 30%;
     margin-left: 5%;
+}
+
+#loginbuttons {
+    width: 124%;
+}
+
+#loginbutton{
+    width: 100%;
 }
 
 #logincontainer {
