@@ -18,11 +18,13 @@ class Seeder
                   time: 5, style: "cardio_beginner")
 
     Exercise.create(name: "20 Jumping Jacks",
-                      picture: '/img/',
-                      workout: workout)
+                    picture: '/img/',
+                    workout: workout,
+                    next: 2)
     Exercise.create(name: "10 Burpees",
                     picture: '/img/',
-                    workout: workout)
+                    workout: workout,
+                    next: 3)
     Exercise.create(name: "30 Seconds Rest",
                     picture: '/img/',
                     workout: workout)
@@ -34,8 +36,8 @@ class Seeder
                    style: 'cardio_beginner')
 
     Exercise.create(name: "40 Jumping Jacks",
-                      picture: '/img/',
-                      workout: workout)
+                    picture: '/img/',
+                    workout: workout)
     Exercise.create(name: "20 Burpees",
                     picture: '/img/',
                     workout: workout)
@@ -51,8 +53,7 @@ class Seeder
 
     Exercise.create(name: "60 Jumping Jacks",
                     picture: '/img/',
-                    workout: workout,
-                    next: 2)
+                    workout: workout)
     Exercise.create(name: "30 Burpees",
                     picture: '/img/',
                     workout: workout)

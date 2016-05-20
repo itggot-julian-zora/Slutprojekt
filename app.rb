@@ -90,7 +90,7 @@ class App < Sinatra::Base
     erb :first_exercise
   end
 
-    get '/workout/:style/exercise/:id' do |_, id|
+    get '/workout/:style/exercise/:id' do |style, id|
     @exercise = Exercise.get(id)
     @workout = @exercise.workout
     erb :exercise
