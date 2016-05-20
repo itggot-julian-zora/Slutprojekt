@@ -177,6 +177,10 @@ button {
     height: 80%;
 }
 
+#registercolor{
+    color: black;
+}
+
 #register {
     float: right;
     margin-right: 35%;
