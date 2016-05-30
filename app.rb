@@ -80,7 +80,25 @@ class App < Sinatra::Base
   end
 
   get '/history' do
+    @comments = Comment.all(:user => @user, :order => [ :time.desc ])
     erb :history
+  end
+
+  get '/workout/:style/comment/?' do
+    @style = params[:style]
+    erb :comment
+  end
+
+  post '/workout/:style/comment/?' do
+    workout = Workout.first(:style => params[:style])
+    if workout
+      if params[:text]
+        comm = Comment.create(:text => params[:text], :workout => workout, :user => @user, :time => Time.now)
+        comm.save
+        redirect '/history'
+      end
+    end
+    redirect '/workout/cardio_beginner'
   end
 
   get '/workout/:style' do |style|

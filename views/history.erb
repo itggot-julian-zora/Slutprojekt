@@ -1,0 +1,8 @@
+<% for comment in @comments %>
+    <div id="historyholder" style="background-color: #888888;">
+      <p>Workout: <%= comment.workout.style %></p>
+      <p>Kommentar: <%= comment.text %></p>
+      <p>Tid: <%= comment.time %></p>
+      <p></p>
+    </div>
+<% end %>

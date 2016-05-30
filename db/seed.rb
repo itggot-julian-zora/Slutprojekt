@@ -18,7 +18,7 @@ class Seeder
                   time: 5, style: "cardio_beginner",
                   level: 1)
 
-    Exercise.create(name: "20 Jumping Jacks",
+    Exercise.create(name: "15 Climbers",
                     picture: '/img/',
                     workout: workout,
                     next: 2)
@@ -26,9 +26,18 @@ class Seeder
                     picture: '/img/',
                     workout: workout,
                     next: 3)
-    Exercise.create(name: "30 Seconds Rest",
+    Exercise.create(name: "15 Situps",
                     picture: '/img/',
-                    workout: workout)
+                    workout: workout,
+                    next: 4)
+    Exercise.create(name: "15 Squats",
+                    picture: '/img/',
+                    workout: workout,
+                    next: 5)
+    Exercise.create(name: "20 Jumping Jacks",
+                    picture: '/img/',
+                    workout: workout,
+                    next: 6)
 
 
     workout = Workout.create(name: 'Cardio - Beginner 2',

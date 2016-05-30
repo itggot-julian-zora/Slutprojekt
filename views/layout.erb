@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="/css/swag.css" type="text/css"/>
   <meta charset="UTF-8">
   <title>Workout Helper</title>
@@ -8,12 +9,14 @@
 <body>
 
   <div class="header">
+    <div id="logintextholder">
     <% if @user %>
         <span id="loggedintext">Logged in as <%= @user.username %></span>
-        <form action="/logout" method="post">zz
+        <form action="/logout" method="post">
           <button id="logoutbutton" type="submit">Log out</button>
         </form>
     <% end %>
+    </div>
     <div class="container">
       <div class="logo">
         <h1><a href="/">Workout Helper</a></h1>

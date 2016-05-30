@@ -5,4 +5,5 @@ class User
   property(:email, String)
   property(:password, BCryptHash)
   property(:username, String)
+  has n, :comment
 end

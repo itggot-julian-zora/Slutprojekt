@@ -7,4 +7,5 @@ class Workout
   property(:style, String)
   property(:level, Integer)
   has n, :exercises
+  has n, :comment
 end
